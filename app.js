@@ -22,12 +22,12 @@ app.post('/index', (req,res) => {
     }
     mailer(message)
     user = req.body
-    res.redirect('/index') // переадресация
+    res.redirect('/index.html') // переадресация
 })  // отправка страницы клиенту 
-app.get('/index', (req,res) => {
-    if(typeof user !== 'object') return res.sendFile(__dirname + '/index.html')
+app.get('/', (req,res) => { // тут был Index
+   // if(typeof user !== 'object') return res.sendFile(__dirname + '/index.html')
     res.sendFile(__dirname + '/index.html') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом 
-    user = undefined
+   // user = undefined
 })
 
 app.listen(PORT, ()=>console.log(`server listening at http://localhost:${PORT}/index`))
