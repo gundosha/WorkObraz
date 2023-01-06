@@ -24,10 +24,14 @@ app.post('/index', (req,res) => {
     user = req.body
     res.redirect('/index.html') // переадресация
 })  // отправка страницы клиенту 
+
 app.get('/', (req,res) => { // тут был Index
-   // if(typeof user !== 'object') return res.sendFile(__dirname + '/index.html')
-    res.sendFile(__dirname + '/index.html') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом 
-   // user = undefined
+     res.sendFile(__dirname + '/index.html') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом
+   })
+app.get('/index', (req,res) => { // тут был Index
+ if(typeof user !== 'object') return res.sendFile(__dirname + '/index.html')
+    res.send('Заявка оставлена успешно, данные отправлены на почту') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом 
+ user = undefined
 })
 
-app.listen(PORT, ()=>console.log(`server listening at http://localhost:${PORT}/index`))
+app.listen(PORT, ()=>console.log(`server listening at http://localhost:${PORT}`))
