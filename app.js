@@ -7,7 +7,7 @@ let user = undefined
 const PORT = 3001 // порт
 
 app.use(express.static('../WorkObraz'));
-app.use('/static', express.static('../WorkObraz'));
+app.use('/static', express.static('WorkObraz'));
 app.use('/index.css', express.static(__dirname + '/index.css'))
 app.use(bodyParser.urlencoded({extended : false})) // собирает данные с боди
 app.post('/index', (req,res) => {  
@@ -22,16 +22,12 @@ app.post('/index', (req,res) => {
     }
     mailer(message)
     user = req.body
-    res.redirect('/index.html') // переадресация
+    res.redirect('/index') // переадресация
 })  // отправка страницы клиенту 
-
-app.get('/', (req,res) => { // тут был Index
-     res.sendFile(__dirname + '/index.html') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом
-   })
-app.get('/index', (req,res) => { // тут был Index
- if(typeof user !== 'object') return res.sendFile(__dirname + '/index.html')
-    res.send('Заявка оставлена успешно, данные отправлены на почту') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом 
- user = undefined
+app.get('/index', (req,res) => {
+    if(typeof user !== 'object') return res.sendFile(__dirname + '/index.html')
+        res.send(__dirname + '/index.html') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом 
+    user = undefined
 })
 
-app.listen(PORT, ()=>console.log(`server listening at http://localhost:${PORT}`))
+app.listen(PORT, ()=>console.log(`server listening at http://localhost:${PORT}/index`))
