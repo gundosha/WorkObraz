@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="projectPc.css">
+    <link rel="stylesheet" href="modal.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Document</title>
@@ -13,29 +15,37 @@
 <body>
         <div class="page">
             <section  class="header header__portfolio">
-                <h1 class="header__title">\Портфолио</h1>
-                <div class="header__menu">
+                <h1 class="header__title portfolio-header__title">\Портфолио</h1>
+                <div class="header__logo header__logo-pc">
+                    <img class="header__image" src="./image/logo.svg" alt="лого">
+                </div>
+                <div class="header__menu portfolio-header__menu">
                     <a class="header__menu_text header__menu_home" href='./index.html'>Home</a>
                     <a class="header__menu_text" href='#'>О нас</a>
                     <a class="header__menu_text" href='#'>Проекты</a>
                     <a class="header__menu_text" href='#'>Цены</a>
                     <a class="header__menu_text" href='#'>Связаться</a>
                 </div>
-                <ul class="header__menu_burger">
-                    <li><img class="header__image_burger header__image_burger-portfolio" src="./image/,burger.svg"alt="лого">
-                            <ul class='header__menu_burgers header__menu_burger_block'>
-                                <li><a class="header__menu_text header__menu_home" href='./index.html'>Home</a></li>
-                                <li><a class="header__menu_text" href='#'>О нас</a></li>
-                                <li><a class="header__menu_text" href='#'>Проекты</a></li>
-                                <li><a class="header__menu_text" href='#'>Цены</a></li>
-                                <li><a class="header__menu_text" href='#'>Связаться</a></li>
-                            </ul>
-                    </li>
-                </ul>
+          
+                    <img class="header__image_burger" src="./image/,burger.svg"alt="лого">
+                    <div class="modal">
+                        <img src="./image/close_btn.svg" alt="кнопка закрытия" class="modal__btn_close">
+                        <h1 class="modal__title Home"><a class="modal__title_link" href="./index.html">ГЛАВНАЯ</a></h1>
+                        <h1 class="modal__title AboutMe"><a class="modal__title_link" href="./about-us.html">О НАС</a></h1>
+                        <h1 class="modal__title services"><a class="modal__title_link" href="./portfolio.html">ПОРТФОЛИО</a></h1>
+                        <h1 class="modal__title contacts"><a class="modal__title_link" href="#services">УСЛУГИ</a></h1>
+                        <h1 class="modal__title contacts"><a class="modal__title_link" href="#contacts">КОНТАКТЫ</a></h1>
+                        <p class="modal__text">Мы создаем не просто интерьеры, а атмосферу жизни.</p>
+                        <div class="modal__link_container">
+                            <img src="./image/call_btn.svg" alt="иконка мобильного телефона">
+                            <a href='tel:+79296359903' class="modal__link_number">+7 (929) 635-99-03</a>
+                    </div>
+            </div>
             </section>
             <section class="project">
+                <h3 class="portfolio-project__title">РЕАЛИЗОВАННЫЕ<br>ПРОЕКТЫ</h3>
                 <div data-aos="fade-left"  class="project__container project__container_even project__container__example_one project__container_margin">
-                    <div class="project__container_text">
+                    <div class="project__container_text portfolio-project__container_text">
                         <div class="project__container_text_title">
                             <p class="project__container_year">2020</p>
                             <h3 class="project__container_title">ЖК Кутузовский Life</h3>
@@ -86,7 +96,7 @@
                             <h3 class="project__container_title_long project__container_title">ЖК Discovery Park</h3>
                         </div>
                             <p class="project__container_subtitle_four project__container_subtitle">Апартаменты-студия для девушки</p>
-                        <div class="project__container_group2">
+                        <div class="project__container_group2 project__container_group2-miracle">
                         <a href="./discoverpark.html" class="project__container_link">открыть проект <img src="./image/Vectorarrow.svg" alt="" class="project__container_link_image"></a>
                         <p class="project__container_metre">29 м2</p>
                         </div>
@@ -104,9 +114,9 @@
                         <p class="project__container_metre">55 м2</p>
                         </div>
                     </div>
-                    <img src="./image/oktpole.jpg" alt="пятый пример" class="project__container_image">
+                    <img src="./image/Rectangle 882octPole_pc.png" alt="пятый пример" class="project__container_image">
                 </div>
-                <div data-aos="fade-left" class="project__container project__container_even project__container__example_one">
+                <div data-aos="fade-left" class="project__container portfolio-project__container project__container_even project__container__example_one">
                     <div class="project__container_text">
                         <div class="project__container_text_title">
                             <p class="project__container_year">2020</p>
@@ -118,7 +128,7 @@
                         <p class="project__container_metre">100 м2</p>
                         </div>
                     </div>
-                    <img src="./image/novosheremki.jpg" alt="пятый пример" class="project__container_image">
+                    <img src="./image/Rectangle 873sherem_pc.png" alt="пятый пример" class="project__container_image portfolio-project__container_image">
                 </div>
                 <div data-aos="fade-right" class="project__container project__container_even project__container__example_one">
                     <div class="project__container_text">
@@ -132,7 +142,7 @@
                         <p class="project__container_metre">55 м2</p>
                         </div>
                     </div>
-                    <img src="./image/preob.png" alt="пятый пример" class="project__container_image">
+                    <img src="./image/Rectangle 883preobrajenie_pk.png" alt="пятый пример" class="project__container_image">
                 </div>
             </section>
             <section data-aos="fade-up" class="footer">

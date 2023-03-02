@@ -6,45 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="modal.css">
     <title>Obraz</title>
 </head>
 <body>
     <div class="page">
         <section class="da">
                 <section class="header">
+                
                         <div class="header__logo">
                             <img class="header__image" src="./image/logo.svg" alt="лого">
                         </div>
                         <div class="header__menu">
                             <a class="header__menu_text header__menu_home" href='./index.html'>Home</a>
-                            <a class="header__menu_text" href='#'>О нас</a>
+                            <a class="header__menu_text" href='./about-us.html'>О нас</a>
                             <a class="header__menu_text" href='./portfolio.html'>Проекты</a>
                             <a class="header__menu_text" href='#price'>Цены</a>
                             <a class="header__menu_text" href='#contact'>Связаться</a>
                         </div>
-                            <ul class="header__menu_burger">
-                                <li>    
-                                    <img class="header__image_burger" src="./image/,burger.svg"alt="лого">
-                                    <ul class='header__menu_burgers header__menu_burger_block'>
-                                        <li><a class="header__menu_text" href='./index.html'>Home</a></li>
-                                        <li><a class="header__menu_text" href='#why_we'>О нас</a></li>
-                                        <li><a class="header__menu_text" href='./portfolio.html'>Проекты</a></li>
-                                        <li><a class="header__menu_text" href='#price'>Цены</a></li>
-                                        <li><a class="header__menu_text" href='#contact'>Связаться</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <img class="header__image_burger" src="./image/,burger.svg"alt="лого">
                 </section>
-                <section class="we">
+                <h1 class="design__title header-design__title">Cтудия<br> дизайна<br> интерьера</h1>
+                <section class="we"> 
                     <div class="we__design">
                         <div class="design__text_container">
-                            <h1 class="design__title">Cтудия дизайна интерьера</h1>
+                        <div class="design__container_title">
+                            <h1 class="design__title design__title-pc">Cтудия<br> дизайна<br> интерьера</h1>
+                        </div>
                             <h3 class="design__subtitle">- Проектрируем каждое решение с мыслью о людях и их мечтах</h3>
                             <button class="design__btn"><a class="design__btn_link" href="#">консультация <img src="./image/Vector.svg" class="design__btn_image" alt="стрелочка"> <img src="./image/white_arrow.svg" alt="стрелочка" class="design__btn_image_white"></a></button>
                         </div>
                         <img src="./image/Rectangle 865.png" alt="картинка примера" class="design__image">
                     </div>
                 </section>
+                
         </section>
                 <section class="team">
                     <img src="./image/team.png" alt="фото команды" class="team_photo">
@@ -114,7 +109,7 @@
                                 <h3 class="project__container_title_long project__container_title">ЖК Discovery Park</h3>
                             </div>
                                 <p class="project__container_subtitle_four project__container_subtitle">Апартаменты-студия для девушки</p>
-                            <div class="project__container_group2">
+                            <div class="project__container_group2 project__container_group2-miracle">
                             <a href="#" class="project__container_link">узнать больше <img src="./image/Vectorarrow.svg" alt="" class="project__container_link_image"></a>
                             <p class="project__container_metre">29 м2</p>
                             </div>
@@ -144,33 +139,34 @@
                     <div class="clients__border"></div>
                     <div class="clients__container_com">
                 <div class="clients__container_block">
-                    <img src="./image/mariaphoto.png" alt="фото" class="clients__container_image">
+                    <img src="./image/григорий.png" alt="фото" class="clients__container_image">
                     <div class="clients__container_block_text">
-                        <h5 class="clients__container_title">Мария Попова</h5>
-                        <p class="clients__container_subtitle">Креативный менеджер</p>
+                        <h5 class="clients__container_title">Григорий</h5>
+                        <p class="clients__container_subtitle">Разработчик</p>
                         <button class="slider_next"> <img src="./image/btnnext.svg" alt="кнопка перелистывания"></button>
                     </div>
 
-                    <p class="clients__container_text">aThere are many variations passages of Lorem Ipsum majority some by words which don't look . </p>
+                    <p class="clients__container_text">“Заказывали проект ремонта для меня и моей семьи. С самого начала процесс был невероятно легкий, у меня не так много времени на мелочи. Очень удобный формат дизайн проекта с ремонтом под ключ. Команда внимательно выслушала наши потребности и пожелания относительно пространства, и мы влюбились в результат!”</p>
                 </div>
                 <div class="clients__container_block">
 
-                    <img src="./image/mariaphoto.png" alt="фото" class="clients__container_image">
+                    <img src="./image/элина.png" alt="фото" class="clients__container_image">
                 <div class="clients__container_block_text">
-                    <h5 class="clients__container_title">Мария Попова</h5>
-                    <p class="clients__container_subtitle">Креативный менеджер</p>
+                    <h5 class="clients__container_title">Элина</h5>
+                    <p class="clients__container_subtitle">Директор по развитию</p>
                     <button class="slider_next"> <img src="./image/btnnext.svg" alt=""></button>
                 </div>
-                <p class="clients__container_text">bThere are many variations passages of Lorem Ipsum majority some by words which don't look .</p>
+                <p class="clients__container_text">“Недавно я имела удовольствие работать с Ксенией и ее командой над проектом ремонта студии, и я не могу описать восторг, находясь в своем новом доме! На протяжении всего процесса ремонта сообщают последние новости, постоянный контроль. 
+                    Их внимание к качеству впечатляет, и я была уверена, что на каждом этапе работ все пройдет гладко.”</p>
             </div>
             <div class="clients__container_block">
-                    <img src="./image/mariaphoto.png" alt="фото" class="clients__container_image">
+                    <img src="./image/марина.png" alt="фото" class="clients__container_image">
                 <div class="clients__container_block_text">
-                        <h5 class="clients__container_title">Мария Попова</h5>
+                        <h5 class="clients__container_title">Марина</h5>
                         <p class="clients__container_subtitle">Креативный менеджер</p>
                         <button class="slider_next"> <img src="./image/btnnext.svg" alt=""></button>
                 </div>  
-                <p class="clients__container_text">cThere are many variations passages of Lorem Ipsum majority some by words which don't look . </p>
+                <p class="clients__container_text">"Мы обратились в эту студию для ремонта абсолютно голой квартиры с бетонными стенами. Все комнаты выглядят просторно и уютно, а каждая деталь была продумана до мелочей. Каждый член нашей семьи остался доволен своей комнатой, и мы наслаждаемся новым интерьером каждый день.“</p>
             </div>
                     </div>
                 </section>
@@ -301,6 +297,7 @@
                         </div>
                     </section>
                     <section class="footer">
+                        <a name="footer"></a>
                         <div class="footer__container">
                             <div class="footer__menu">
                                 <h6 class="footer__menu_title">Меню</h6>
@@ -326,6 +323,18 @@
                     <section class="da">
                         <div class="container"></div>
                     </section>
+    </div>
+    <div class="modal">
+        <img src="./image/close_btn.svg" alt="кнопка закрытия" class="modal__btn_close">
+        <h1 class="modal__title Home"><a class="modal__title_link" href="./index.html">ГЛАВНАЯ</a></h1>
+        <h1 class="modal__title AboutMe"><a class="modal__title_link" href="./about-us.html">О НАС</a></h1>
+        <h1 class="modal__title services"><a class="modal__title_link" href="./portfolio.html">ПОРТФОЛИО</a></h1>
+        <h1 class="modal__title contacts"><a class="modal__title_link" href="#services">УСЛУГИ</a></h1>
+        <h1 class="modal__title contacts"><a class="modal__title_link" href="#contacts">КОНТАКТЫ</a></h1>
+        <p class="modal__text">Мы создаем не просто интерьеры, а атмосферу жизни.</p>
+        <div class="modal__link_container">
+                <img src="./image/call_btn.svg" alt="иконка мобильного телефона">
+                <a href='tel:+79296359903' class="modal__link_number">+7 (929) 635-99-03</a>
     </div>
 </body>
 

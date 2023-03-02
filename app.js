@@ -26,7 +26,7 @@ app.post('/index', (req,res) => {
 })  // отправка страницы клиенту 
 app.get('/index', (req,res) => {
     if(typeof user !== 'object') return res.sendFile(__dirname + '/index.html')
-        res.send(__dirname + '/index.html') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом 
+        res.sendFile(__dirname + '/application.html') // `Заявка оставлена успешно, данные отправлены на почту` // если всё отправилось перекидываем на страницу с кайфом 
     user = undefined
 })
 

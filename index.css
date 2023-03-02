@@ -42,6 +42,7 @@ ul{
     .header{
     border: none;
     height: 85px;
+    background: #F9F5F2;
    /* backdrop-filter: blur(7px); */
     }
 }
@@ -55,7 +56,7 @@ ul{
 
 @media screen and (max-width: 425px) {
     .da{
-    background-image: url(./image/blurrr\ 1.png);
+    background-image: url(./image/фон-header_mobile.png);
     background-size: cover
     }
 }
@@ -136,15 +137,12 @@ ul{
 }
 
 .header__image_burger{
-    margin-top: 41px;
-    position: fixed;
-    z-index: 101;
+   display: none;
 }
 
 @media screen and (min-width:500px) {
     .header__image_burger{
         margin-top: 85px;
-        width: 100px;
     }
 }
 
@@ -205,6 +203,8 @@ ul{
     }
 }
 
+
+
 .we{
     max-height: 704px;
     margin-bottom: 167px;
@@ -213,6 +213,13 @@ ul{
 
 .we__design{
     display: flex;
+}
+
+@media screen and (max-width: 425px){
+    .we__design{
+        display: block;
+    }
+    
 }
 
 .design__image{
@@ -282,7 +289,6 @@ line-height: 108.02%;
     .design__title{
         font-size: 35px;
         padding: 40px 0px 0px 23px;
-        -webkit-backdrop-filter: blur(4px);
         width: 320px;
         border-bottom-right-radius: 240px;
         border: none;
@@ -321,8 +327,9 @@ padding-top: 33px;
         line-height: 14.5px;
         padding-right: 21px;
         color: black;
-        margin-top: 26px;
+        margin-top: 90px;
         padding-right: 25px;
+        text-align: end;
     }
 }
 
@@ -340,7 +347,6 @@ padding-top: 33px;
 
 @media screen and (max-width:430px) {
     .design__text_container{
-        max-width: max-content;
     }
 }
 
@@ -369,6 +375,7 @@ position: relative;
         margin-top: 176px;
         background: transparent;
         border: 1px solid white;
+        background: rgba(255, 255, 255, 0.4);
     }
 }
 
@@ -581,10 +588,27 @@ color: black;
     max-height: 446px;
     border-top: 1px solid;
     padding-bottom: 143px;
+    justify-content: space-between;
     
 }
 
-@media screen and (max-width:425px) {
+.project__container__example_one{
+    margin-top: 0;
+}
+
+.portfolio-project__container{
+    flex-direction: row-reverse;
+}
+
+.portfolio-project__container_image{
+    margin-right: 20px;
+}
+
+.portfolio-project__container_text{
+    margin-right: 20px;
+}
+
+@media screen and (max-width:768px) { /*вот тут */
     .project__container{
         display: block;
         max-height: max-content;
@@ -599,7 +623,8 @@ color: black;
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-top: 12px;;
+    padding-top: 12px;
+    justify-content: space-between;
 }
 
 @media screen and (max-width:1200px) {
@@ -617,6 +642,9 @@ color: black;
 .project__container_group2{
     display: flex;
 }
+
+
+
 
 
 
@@ -646,7 +674,7 @@ color: black;
     padding-top: 37px;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .project__container_title{
         margin-bottom: 20px;
         max-width: 300px;
@@ -675,7 +703,7 @@ color: black;
 font-weight: 600;
 font-size: 22.2789px;
 line-height: 30px;
-padding-top: 171px;
+ /*padding-top: 171px; */
 }
 
 @media screen and (max-width:425px) {
@@ -690,7 +718,7 @@ padding-top: 171px;
 
 
 .project__container_image{
-    max-width: 819px;
+    max-width: 779px;
     max-height: 451px;
     padding-top: 18px;
 }
@@ -824,7 +852,7 @@ margin-right: 23px;
     padding-top: 142px;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .project__container_subtitle_two{
         padding-top: 0;
 
@@ -833,9 +861,10 @@ margin-right: 23px;
 
 .project__container_subtitle_three{
     padding-top: 221px;
+    margin-right: 10px;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .project__container_subtitle_three{
         padding-top: 0;
 
@@ -847,7 +876,7 @@ margin-right: 23px;
     padding-top: 216px;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .project__container_subtitle_four{
         padding-top: 0;
 
@@ -1125,8 +1154,10 @@ margin-left: 100px
 
 
 .clients__container_block{
+    border: 1px solid;
+    border-top-right-radius: 35%;
     display: flex;
-    background-color: white;
+    background-color: #F9F5F2;
     width: 380px;
     height: 335px;
     align-self: center;
@@ -1140,22 +1171,22 @@ margin-left: 100px
 @media screen and (max-width:1200px) {
     .clients__container_block{     
         width: 340px;
-        height: 257px;
+        height: 302px;
     }
 }
 
 @media screen and (max-width:425px) {
     .clients__container_block{     
-       background-color: #DFDCD5;
+        background-color: #F9F5F2;
     }
 }
 
 .slider_next{
     position: absolute;
-    top: 14px;
+    top: 170px;
     right: 11px;
     border: 0;
-    background-color: #DFDCD5;
+    background-color: #F9F5F2;
 }
 
 @media screen and (min-width:426px) {
@@ -1240,20 +1271,24 @@ margin-top: 8px;
 }
 
 .clients__container_text{
+    font-style: italic;
     line-height: 24px;
     width: 309px;
 height: 84px;
 margin-left: 40px;
 margin-top: -63px;
+font-weight: 300;
+font-size: 13.7368px;
+line-height: 19px;
+opacity: 0.8;
 }
 
 
 @media screen and (max-width:1200px) {
     .clients__container_text{
         margin-left: 40px;
-        margin-top: 35px;
         margin-right: 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -1582,7 +1617,7 @@ line-height: 40px;
 .solution{
     max-width: 1240px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 @media screen and (max-width:425px) {
@@ -1826,6 +1861,8 @@ margin-bottom: 115px;
     border: 1px white;
     padding: 0;
     border-radius: 0px;
+    outline: none;
+    padding-left: 10px;
     /* background: black; */
 }
 
@@ -1842,7 +1879,7 @@ margin-bottom: 115px;
 @media screen and (max-width:425px) {
     .dream__input{
         font-size: 8px;
-        width: 170px;
+        width: 46%;
         height: 33px;
     }
 }
@@ -1876,7 +1913,7 @@ margin-bottom: 115px;
 @media screen and (max-width:425px) {
     .dream__btn{
         font-size: 8px;
-        width: 170px;
+        width: 49%;
         height: 35px;
     }
 }
@@ -2099,9 +2136,42 @@ margin-bottom: 27px;
 }
 
 .header__portfolio{
+    display: flex;
     height: max-content;
     border-bottom: 1px solid;
+    max-width: 1240px;
+    margin: auto;
+    align-items: flex-start
+    ;
 }
+
+@media screen and (min-width:768px) {
+    .portfolio-header__title{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header__portfolio{
+        align-items: baseline;
+        justify-content: space-between;
+        
+    }
+    .header__image_burger{
+        margin-right: 20px;
+        display: block;
+        margin-top: 40px;
+        width: 50px;
+    }
+}
+
+
+.portfolio-header__menu{
+    border: none;
+}
+
+
+
 
 
 
@@ -2110,19 +2180,41 @@ margin-bottom: 27px;
 }
 
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .project__container_text_title{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: baseline;
     }
 }
+
 
 
 .project__container_margin{
     padding-top: 98px;
 }
 
+@media screen and (min-width:768px) {
+    .project__container_margin{
+        padding-top: 0;
+    }
+}
+
+.portfolio-project__title{
+    font-family: 'Alethia', 'sans-serif';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 66.2376px;
+    line-height: 108.02%;
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .portfolio-project__title{
+        display: none;
+    }
+}
 
 
 /* кутузовский страница */
@@ -2156,6 +2248,12 @@ margin-bottom: 27px;
     margin-bottom: -95px;
 }
 
+
+@media screen and (max-width:768px) {
+    .project__container_group2-miracle{
+        margin-top: 50px;
+    }
+}
 .project__container_metre_portolio{
     font-weight: 600;
     font-size: 33.4184px;
@@ -2296,4 +2394,27 @@ margin-bottom: 27px;
     background: #F9F5F2;
     height: 51px;
     width: 199px;
-    margin-bottom: 264px;}
+    margin-bottom: 264px;
+}
+
+
+.header-design__title{
+    width: 100%;
+    background: #F9F5F2;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    display: none;
+}
+
+
+
+@media screen and (max-width:425px) {
+    .header-design__title{
+        display: block;
+    }
+
+    .design__title-pc{
+        display: none;
+    }
+}
+    

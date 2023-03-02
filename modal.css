@@ -1,0 +1,123 @@
+@import url(./font/fonts.css
+);
+
+.modal__form{
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5); /* цвет фона */
+    z-index: 1050;
+    text-align: end;
+    color: black;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+
+.form__modal{ 
+    width: 714px;
+    margin: auto;
+    margin-top: 20%;
+    padding: 50px;
+}
+
+@media screen and (max-width: 320px) {
+    .form__modal{
+        padding: 25px;
+        width: 280px;
+    }
+
+}
+
+
+
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #DFDCD5; /* цвет фона */
+    z-index: 1050;
+    text-align: end;
+    color: black;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+
+.modal:nth-child(6){
+    text-align: start;
+}
+
+.modal__btn_close{
+    margin: 24px 20px 195px 0px;
+}
+
+.modal__open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__close{
+    opacity: 0;
+}
+
+.modal__title{
+    border-bottom: 1px solid;
+    color: black;
+    margin: 0 20px 0 20px;
+    font-weight: 400;
+    font-size: 39.6693px;
+    line-height: 49px;
+    font-family: 'Alethia', 'sans-serif';
+}
+
+.modal__title:nth-last-child(3){
+    border-bottom: none;
+    margin-bottom: 22px;
+}
+
+.modal__text{
+    color: black;
+    text-align: start;
+    margin: 0 20px 15px 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    margin-top: 32px;
+}
+
+.modal__link_container{
+    display: flex;
+    margin-left: 20px;
+}
+
+.modal__title_link{
+    text-decoration: none;
+    color: black;
+    font-family: 'Alethia', 'sans-serif';
+}
+
+.modal__link_number{
+    color: black;
+    text-align: start;
+    margin-top: 5px;
+    margin-left: 4px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+}

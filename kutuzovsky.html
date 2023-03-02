@@ -6,83 +6,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="projectPc.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>kutuzovsky</title>
 </head>
 <body>
     <div class="page">
-        <section data-aos="fade-down"  class="header header__portfolio">
-            <h1 class="header__title">\Портфолио</h1>
-            <div class="header__menu">
-                <a class="header__menu_text header__menu_home" href='./index.html'>Home</a>
-                <a class="header__menu_text" href='#'>О нас</a>
-                <a class="header__menu_text" href='#'>Проекты</a>
-                <a class="header__menu_text" href='#'>Цены</a>
-                <a class="header__menu_text" href='#'>Связаться</a>
-            </div>
-            <ul class="header__menu_burger">
-                <li><img class="header__image_burger header__image_burger-portfolio" src="./image/,burger.svg"alt="лого">
-                        <ul class='header__menu_burgers header__menu_burger_block'>
-                            <li><a class="header__menu_text header__menu_home" href='./index.html'>Home</a></li>
-                            <li><a class="header__menu_text" href='#'>О нас</a></li>
-                            <li><a class="header__menu_text" href='#'>Проекты</a></li>
-                            <li><a class="header__menu_text" href='#'>Цены</a></li>
-                            <li><a class="header__menu_text" href='#'>Связаться</a></li>
-                        </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="project project_portolio">
-            <div data-aos="fade-left"  class="project__container project__container_even project__container__example_one">
-                <div class="project__container_text">
-                    <div class="project__container_text_title">
-                        <p class="project__container_year">2020</p>
-                        <h3 class="project__container_title">ЖК Кутузовский Life</h3>
-                    </div>
-                    <p class="project__container_subtitle project__container_subtitle_portfolio">Квартира в стиле минимализм для семьи с ребенком</p>
-                    <div class="project__container_group2 project__container_group2_top">
-                        <div class="project__container_math">
-                            <p class="project__container_square">площадь</p>
-                            <p class="project__container_metre project__container_metre_portolio">100 м2</p>
-                        </div>
-                        <div class="project__container_rooms">
-                            <p class="project__container_rooms">комнаты</p>
-                            <p class="project__container_cuantity-rooms">3</p>
-                        </div>
-                    </div>
+        <div class="mobile__project">
+            <section  class="header header__portfolio">
+                <h1 class="header__title portfolio-header__title">\Портфолио</h1>
+                <div class="header__logo">
+                    <img class="header__image" src="./image/logo.svg" alt="лого">
                 </div>
-                <img src="./image/oneexample.png" alt="первый пример" class="project__container_image">
+                <div class="header__menu portfolio-header__menu">
+                    <a class="header__menu_text header__menu_home" href='./index.html'>Home</a>
+                    <a class="header__menu_text" href='#'>О нас</a>
+                    <a class="header__menu_text" href='#'>Проекты</a>
+                    <a class="header__menu_text" href='#'>Цены</a>
+                    <a class="header__menu_text" href='#'>Связаться</a>
+                </div>
+                <ul class="header__menu_burger">
+                    <li><img class="header__image_burger header__image_burger-portfolio" src="./image/,burger.svg"alt="лого">
+                            <ul class='header__menu_burgers header__menu_burger_block'>
+                                <li><a class="header__menu_text header__menu_home" href='./index.html'>Home</a></li>
+                                <li><a class="header__menu_text" href='#'>О нас</a></li>
+                                <li><a class="header__menu_text" href='#'>Проекты</a></li>
+                                <li><a class="header__menu_text" href='#'>Цены</a></li>
+                                <li><a class="header__menu_text" href='#'>Связаться</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="project project_portolio">
+                <h3 class="portfolio-project__title">РЕАЛИЗОВАННЫЕ<br>ПРОЕКТЫ</h3>
+                <div data-aos="fade-left"  class="project__container project__container_even project__container__example_one">
+                    <div class="project__container_text">
+                        <div class="project__container_text_title">
+                            <p class="project__container_year">2020</p>
+                            <h3 class="project__container_title">ЖК Кутузовский Life</h3>
+                        </div>
+                        <p class="project__container_subtitle project__container_subtitle_portfolio">Квартира в стиле минимализм для семьи с ребенком</p>
+                        <div class="project__container_group2 project__container_group2_top">
+                            <div class="project__container_math">
+                                <p class="project__container_square">площадь</p>
+                                <p class="project__container_metre project__container_metre_portolio">100 м2</p>
+                            </div>
+                            <div class="project__container_rooms">
+                                <p class="project__container_rooms">комнаты</p>
+                                <p class="project__container_cuantity-rooms">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./image/oneexample.png" alt="первый пример" class="project__container_image">
+                </div>
+            </section>
+            <section data-aos="fade-right" class="location">
+                <p class="location__title_small">локация</p>
+                <h2 class="location__title">Москва</h2>
+                <p class="location__subtitle location__subtitle-kutuz">При обсуждении проекта возникло расхождение вкуса у заказчиков: сам заказчик предпочитает современные интерьеры, в то время как его жена отдает предпочтение классическим.</p>
+                <p class="location__subtitle"> Но нам удалось найти золотую середину: квартира была преимущественно выполнена в современном стиле, но с добавлением классических элементов.</p>
+            </section>
+            <section class="project-kutuz">
+                <img data-aos="fade-left" src="./image/vanna-kutuz.png" alt="ванная комната кутузовский жк" class="project-kutuz__image">
+                <p data-aos="fade-right" class="location__subtitle">Мы использовали множество световых сценариев. В квартире натяжной тканевый потолок с теневым зазором по периметру. Основной свет в кухне-гостиной и прихожей - магнитная трековая система, которая переходит из одной зоны в другую, тем самым объединяя пространство.</p>
+                <img data-aos="fade-left" src="./image/gostin-kutuz.png" alt="гостинная кутузовский" class="project-kutuz__image">
+                <p data-aos="fade-right" class="location__subtitle">Кухонная часть была разделена на 2 зоны: "маленькая" часть кухни с варочной поверхностью, раковиной и посудомойкой - на виду, а вторая половина с крупной бытовой техникой располагается напротив и скрыта, мебельные фасады сделаны в цвет стен. Таким образом кухня получилась легкой и воздушной, но при этом функциональной. </p>
+                <img data-aos="fade-left" src="./image/plan-kutuz.png" alt="" class="project-kutuz__image">
+                <img data-aos="fade-right" src="./image/коридор скролл 2.png" alt=" коридор кутузовский" class="project-kutuz__image">
+                <img data-aos="fade-left" src="./image/спальня скролл 1.png" alt="спальня кутузовский" class="project-kutuz__image">
+                <img data-aos="fade-right" src="./image/детская.png" alt="детская комната кутузовский" class="project-kutuz__image">
+                <div data-aos="fade-left" class="project__container_navigation">
+                    <a href="./metropoliya.html" class="project-kutuz__link">следующий проект</a>
+                    <a href="./metropoliya.html" class="project-kutuz__link_image"><img src="./image/Vector.svg" alt="" class="project-kutuz__image_link"></a>
+                </div>
+            </section>
+            <section data-aos="fade-up" class="projects">
+                <div class="projects__container"></div>
+                    <a href="./discoverpark.html" class="projects__link"><h3 class="projects__text_link">ЖК Discovery park</h3></a>
+                    <a href="./metropoliya.html" class="projects__link"><h3 class="projects__text_link">ЖК Метрополия корпус ROME</h3></a>
+                    <a href="./sheremetevskiy.html" class="projects__link"><h3 class="projects__text_link">ЖК Шереметьевский</h3></a>
+                    <a href="./octoberpole.html" class="projects__link"><h3 class="projects__text_link">Октябрьское поле</h3></a>
+                    <a href="./novosherem.html" class="projects__link"><h3 class="projects__text_link">ЖК Новочеремушкинская</h3></a>
+                    <a href="./preobrajenskya.html" class="projects__link"><h3 class="projects__text_link">ЖК Преображение</h3></a>
+                    <a href="./portfolio.html"><img src="./image/leftarrow.svg" alt="" class="projects__btn_link"></a>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="project project_portolio project_portolio-pc">
+            <section  class="header header__portfolio">
+                <h1 class="header__title portfolio-header__title">\Портфолио</h1>
+                <div class="header__logo header__logo-pc">
+                    <img class="header__image" src="./image/logo.svg" alt="лого">
+                </div>
+                <div class="header__menu portfolio-header__menu">
+                    <a class="header__menu_text header__menu_home" href='./index.html'>Home</a>
+                    <a class="header__menu_text" href='#'>О нас</a>
+                    <a class="header__menu_text" href='#'>Проекты</a>
+                    <a class="header__menu_text" href='#'>Цены</a>
+                    <a class="header__menu_text" href='#'>Связаться</a>
+                </div>
+                <ul class="header__menu_burger">
+                    <li><img class="header__image_burger header__image_burger-portfolio" src="./image/,burger.svg"alt="лого">
+                            <ul class='header__menu_burgers header__menu_burger_block'>
+                                <li><a class="header__menu_text header__menu_home" href='./index.html'>Home</a></li>
+                                <li><a class="header__menu_text" href='#'>О нас</a></li>
+                                <li><a class="header__menu_text" href='#'>Проекты</a></li>
+                                <li><a class="header__menu_text" href='#'>Цены</a></li>
+                                <li><a class="header__menu_text" href='#'>Связаться</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </section>
+            <h3 class="portfolio-project__title">РЕАЛИЗОВАННЫЕ<br>ПРОЕКТЫ</h3>
+            <div data-aos="fade-left"  class="project__container-pc">
+                <img src="./image/вставить сюдаkutuza_project-title.png" alt="" class="project__image-pc">
+                    <div class="project__container-description">
+                        <div class="project__container_text-pc">
+                            <p class="project__text project__text_regular">2020</p>
+                            <p class="project__text project__text_big project__text_big-first">Жк<br> Кутузовский Life</p>
+                            <p class="project__text project__text_small">Квартира в стиле минимализм для семьи с ребенком</p>
+                        </div>
+                        <div class="project__container_text-pc">
+                            <p class="project__text project__text_regular">локация</p>
+                            <p class="project__text project__text_big project__text_big-second">Москва</p>
+                            <p class="project__text project__text_small project__text_small-second">площадь</p>
+                            <p class="project__text project__text_big">100м2</p>
+                        </div>
+                        <div class="project__container_text-pc">
+                            <p class="project__text project__text_regular">комнаты</p>
+                            <p class="project__text project__text_big project__text_big-three">3</p>
+                        </div>
+                    </div>
             </div>
-        </section>
-        <section data-aos="fade-right" class="location">
-            <p class="location__title_small">локация</p>
-            <h2 class="location__title">Москва</h2>
-            <p class="location__subtitle location__subtitle-kutuz">При обсуждении проекта возникло расхождение вкуса у заказчиков: сам заказчик предпочитает современные интерьеры, в то время как его жена отдает предпочтение классическим.</p>
-            <p class="location__subtitle"> Но нам удалось найти золотую середину: квартира была преимущественно выполнена в современном стиле, но с добавлением классических элементов.</p>
-        </section>
-        <section class="project-kutuz">
-            <img data-aos="fade-left" src="./image/vanna-kutuz.png" alt="ванная комната кутузовский жк" class="project-kutuz__image">
-            <p data-aos="fade-right" class="location__subtitle">Мы использовали множество световых сценариев. В квартире натяжной тканевый потолок с теневым зазором по периметру. Основной свет в кухне-гостиной и прихожей - магнитная трековая система, которая переходит из одной зоны в другую, тем самым объединяя пространство.</p>
-            <img data-aos="fade-left" src="./image/gostin-kutuz.png" alt="гостинная кутузовский" class="project-kutuz__image">
-            <p data-aos="fade-right" class="location__subtitle">Кухонная часть была разделена на 2 зоны: "маленькая" часть кухни с варочной поверхностью, раковиной и посудомойкой - на виду, а вторая половина с крупной бытовой техникой располагается напротив и скрыта, мебельные фасады сделаны в цвет стен. Таким образом кухня получилась легкой и воздушной, но при этом функциональной. </p>
-            <img data-aos="fade-left" src="./image/plan-kutuz.png" alt="" class="project-kutuz__image">
-            <img data-aos="fade-right" src="./image/коридор скролл 2.png" alt=" коридор кутузовский" class="project-kutuz__image">
-            <img data-aos="fade-left" src="./image/спальня скролл 1.png" alt="спальня кутузовский" class="project-kutuz__image">
-            <img data-aos="fade-right" src="./image/детская.png" alt="детская комната кутузовский" class="project-kutuz__image">
-            <div data-aos="fade-left" class="project__container_navigation">
-                <a href="./metropoliya.html" class="project-kutuz__link">следующий проект</a>
-                <a href="./metropoliya.html" class="project-kutuz__link_image"><img src="./image/Vector.svg" alt="" class="project-kutuz__image_link"></a>
+            <div class="project__container-info">
+                <div class="project__container-column-first">
+                    <div class="project__container_text">
+                        <p class="project__text-info">При обсуждении проекта возникло расхождение вкуса у заказчиков: сам заказчик предпочитает современные интерьеры, в то время как его жена  отдает предпочтение классическим.</p>
+                        <p class="project__text-info">Но нам удалось найти золотую середину: квартира была преимущественно выполнена в современном стиле, но с добавлением классических элементов. 
+                        </p>
+                        <p class="project__text-info">Кухонная часть была разделена на 2 зоны: "маленькая" часть кухни с варочной поверхностью, раковиной и посудомойкой - на виду, а вторая половина с крупной бытовой техникой располагается напротив и скрыта, мебельные фасады сделаны в цвет стен. Таким образом кухня получилась легкой и воздушной, но при этом функциональной. 
+                        </p>
+                    </div>
+                    <img src="./image/kutuza-pc/коридор скролл 2_kutuza-pc.png" alt="" class="project-info__image">
+                    <img src="./image/kutuza-pc/скролл ванна 1_kutuza-pc.png" alt="" class="project-info__image">
+                    <img src="./image/kutuza-pc/Group 2190_kutuza-pc.png" alt="" class="project-info__image">
+                </div>
+                <div class="project__container-column-second">
+                    <img src="./image/kutuza-pc/гостиная скролл 3.png" alt="" class="project-info__image">
+                    <img src="./image/kutuza-pc/кам004_CShading_LightMix (1) 1_kutuza-pc.png" alt="" class="project-info__image">
+                    <img src="./image/kutuza-pc/спальня скролл 1_kutuza-pc.png" alt="" class="project-info__image">
+                    <img src="./image/kutuza-pc/кам006,2_CShading_LightMix 1_kutuza-pc.png" alt="" class="project-info__image">
+                    <img src="./image/kutuza-pc/детская_kutuza-pc.png" alt="" class="project-info__image">
+        
+                </div>
             </div>
-        </section>
-        <section data-aos="fade-up" class="projects">
-            <div class="projects__container"></div>
-                <a href="./discoverpark.html" class="projects__link"><h3 class="projects__text_link">ЖК Discovery park</h3></a>
-                <a href="./metropoliya.html" class="projects__link"><h3 class="projects__text_link">ЖК Метрополия корпус ROME</h3></a>
-                <a href="./sheremetevskiy.html" class="projects__link"><h3 class="projects__text_link">ЖК Шереметьевский</h3></a>
-                <a href="./octoberpole.html" class="projects__link"><h3 class="projects__text_link">Октябрьское поле</h3></a>
-                <a href="./novosherem.html" class="projects__link"><h3 class="projects__text_link">ЖК Новочеремушкинская</h3></a>
-                <a href="./preobrajenskya.html" class="projects__link"><h3 class="projects__text_link">ЖК Преображение</h3></a>
-                <a href="./portfolio.html"><img src="./image/leftarrow.svg" alt="" class="projects__btn_link"></a>
+
+            <div data-aos="fade-up" class="projects">
+                <div class="projects__container-pc">
+                    <div class="container__link">
+                        <a href="./discoverpark.html" class="projects__link"><h3 class="projects__text_link">ЖК Discovery park</h3></a>
+                        <div data-aos="fade-left" class="project__container_navigation project__container_navigation-pc">
+                            <a href="./metropoliya.html" class="project-kutuz__link">следующий проект</a>
+                            <a href="./metropoliya.html" class="project-kutuz__link_image"><img src="./image/Vector.svg" alt="" class="project-kutuz__image_link project__navigation-pc"></a>
+                        </div>
+                    </div>
+                    <a href="./metropoliya.html" class="projects__link"><h3 class="projects__text_link">ЖК Метрополия корпус ROME</h3></a>
+                    <a href="./sheremetevskiy.html" class="projects__link"><h3 class="projects__text_link">ЖК Шереметьевский</h3></a>
+                    <a href="./octoberpole.html" class="projects__link"><h3 class="projects__text_link">Октябрьское поле</h3></a>
+                    <a href="./novosherem.html" class="projects__link"><h3 class="projects__text_link">ЖК Новочеремушкинская</h3></a>
+                    <a href="./preobrajenskya.html" class="projects__link"><h3 class="projects__text_link">ЖК Преображение</h3></a>
+                    <a href="./portfolio.html"><img src="./image/leftarrow.svg" alt="" class="projects__btn_link"></a>
+                </div>
             </div>
         </section>
     </div>

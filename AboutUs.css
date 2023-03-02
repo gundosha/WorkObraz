@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #F9F5F2;
+}
+
+body{
+    max-width: 1240px;
+    margin: auto;
+}
+
+.header__menu_about-us{
+    border: none;
+}
+
+.about-us__title{
+    font-family: 'Alethia', 'sans-serif';
+    font-weight: 350;
+font-size: 66.2376px;
+line-height: 108.02%;
+max-width: 352px;
+}
+
+.about-us__title__container{
+    text-align: -webkit-right;;
+}
+
+.about-us__container{
+    max-width: 820px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.about-us__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    max-width: 810px;
+    margin-top: 35px;
+}
+
+
+.about-us__container_img{
+    display: flex;
+    justify-content: center;
+}
+
+.about-us__container_quote{
+    position: relative; 
+    /*background-image: url('./image/Vector\ \(3\).svg');*/
+    height: 427px;
+    background-repeat: no-repeat;
+    margin-top: 45px;
+}
+
+.about-us__vector{
+    position: absolute;
+    left: -105px;
+}
+
+.quote{
+    max-width: 470px;
+    padding-top:   95px;
+    padding-left: 100px;
+}
+
+.quote__text{
+    font-family: 'Alethia Next';
+font-style: italic;
+font-weight: 350;
+font-size: 32px;
+line-height: 30px;
+max-width: 566px;
+}
+
+.quote__text_author{
+    font-family: 'Alethia', 'sans-serif';
+    text-align: end;
+    margin-right: 23px;
+    margin-top: 35px;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.about-us__quote_image{
+    margin-top: 64px;
+}
+
+.about-us__image{
+    overflow: hidden;
+}
+
+.team-obraz__title{
+    font-family: 'Alethia', 'sans-serif';
+    font-style: normal;
+font-weight: 350;
+font-size: 66.2376px;
+line-height: 108.02%;
+margin-bottom: 70px;
+}
+
+.team-obraz__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    width: 493px;
+}
+
+.team-obraz__text:not(:last-child){
+    margin-bottom: 70px;
+}
+
+.team-obraz{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-obraz__imagess{
+    position: relative;
+}
+
+.team-obraz__vector{
+    position: absolute;
+    top: -106px;
+    position: relative;
+    /* position: absolute; */
+    top: -106px;
+    overflow: visible;
+    z-index: 3;
+    /* height: 773px; */
+    margin-bottom: -525px;
+}
+
+.team-obraz__container-images{
+    display: flex;
+}
+
+.team-obraz__images{
+    max-width: min-content;
+}
+
+.images-first{
+    margin-top: 135px;
+    margin-right: 20px;
+}
+
+.tema-obraz__image:not(:last-child){
+    margin-bottom: 20px;
+}
+
+
+.new-life{
+    margin-top: 70px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+
+.new-life__title{
+    font-family: 'Alethia', 'sans-serif';
+    text-align: center;
+    font-weight: 350;
+font-size: 66.2376px;
+line-height: 108.02%;
+}
+
+.new-life__vector{
+    position: absolute;
+    left: -99px;
+    margin-top: -44px;
+
+}
+
+.new-life__subtitle{
+    max-width: 525px;
+    font-family: 'Alethia', 'sans-serif';
+    font-style: italic;
+font-weight: 350;
+font-size: 32px;
+line-height: 30px;
+margin-bottom: 30x;
+}
+
+.new-life__subtitle:not(:first-child){
+    margin-bottom: 110px;
+}
+
+.new-life__subtitle:first-child{
+    margin-bottom: 30px;
+}
+
+.new-life__container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.new-life__text{
+    max-width: 505px;
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #464646;
+margin-top: 58px;
+}
+
+.new-life__container_text{
+    width: 730px;
+    margin-top: 75px;
+
+}

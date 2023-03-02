@@ -1,0 +1,44 @@
+@import url(./font/fonts.css
+);
+
+
+body{
+    background: #DFDCD5;
+    height: 100vh;
+}
+
+.btn__container{
+    text-align: end;
+}
+
+.application__close{
+    margin-top: 24px;
+    margin-right: 20px;
+}
+
+.application__title{
+    font-family: 'Alethia', 'sans-serif';
+    margin: 67px 20px 0px 20px;
+    padding-bottom: 20px;
+    color: black;
+    border-bottom: 2px solid;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 90%;
+}
+
+.appliccation__text{
+    margin-left: 20px;
+    color: black;
+    margin-top: 27px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 29px;
+    font-family: 'RalewayRegular', 'Microsoft Sans Serif', 'sans-serif';
+}
+
+.application__image{
+    margin-left: 20px;
+}

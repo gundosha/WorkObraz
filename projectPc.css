@@ -1,0 +1,155 @@
+.header__logo-pc{
+    padding-left: 0;
+}
+.project__image-pc{
+    margin-top: 60px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+html{
+    
+    background: #F9F5F2;
+}
+
+.project__container-pc{
+    border-top: 1px solid;
+}
+
+
+
+.project__text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 30px;
+}
+
+
+.project__container-description{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+}
+
+.project__container_text-pc{
+    display: flex;
+    flex-direction: column;
+}
+
+.project__container_text-pc-october{
+    justify-content: space-between;
+}   
+
+.project__text_big{
+    font-weight: 500;
+font-size: 56px;
+line-height: 62px;
+max-width: 535px;
+}
+
+.project__text_big-first{
+    margin-bottom: 60px;
+}
+
+
+.project__text_regular{
+    margin-bottom: 25px;
+}
+.project__text_small{
+    max-width: 550px;
+    font-weight: 400;
+font-size: 26px;
+line-height: 34px;
+
+}
+
+.project__text_big-second{
+    margin-bottom: 30px;
+}
+
+.project__text_small-second{
+    margin-bottom: 50px;
+}
+
+.project__text_big-three{
+    text-align: end;
+}
+
+
+
+/*main content*/
+
+.project__container-info{
+    display: flex;
+
+}
+
+.project__container-info{
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.project__text-info{
+    font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 35px;
+max-width: 559px;
+margin-bottom: 28px;
+
+}
+
+.project__text-info:last-child{
+    margin-bottom: 68px;
+}
+
+.project__container-column-first{
+    margin-right: 55px;
+}
+
+.project-info__image{
+    margin-bottom: 50px;
+}
+
+.project__container_navigation-pc{
+    max-width: none;
+    font-style: normal;
+font-weight: 500;
+font-size: 33px;
+line-height: 21px;
+}
+
+.project__navigation-pc{
+    width: 25px;
+}
+
+.container__link{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mobile__project{
+    display: none;
+}
+.header__logo{
+    display: block ;
+}
+
+.project_portolio-pc{
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .mobile__project{
+        display: block;
+    }
+    .header__logo{
+    display: none;
+}
+    .project_portolio-pc{
+        display: none;
+    }
+}
