@@ -4,15 +4,27 @@
 }
 html{
     background: #F9F5F2;
+    overflow-x: hidden;
 }
+
 
 body{
     max-width: 1240px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .header__menu_about-us{
     border: none;
+}
+
+.header-about-us{
+    justify-content: space-between;
+}
+
+.header__logo-about-us{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .about-us__title{
@@ -20,7 +32,16 @@ body{
     font-weight: 350;
 font-size: 66.2376px;
 line-height: 108.02%;
-max-width: 352px;
+max-width: 379px;
+
+}
+
+@media screen and (max-width:768px) {
+    .about-us__title{
+        font-weight: 350;
+        font-size: 37px;
+        line-height: 102%;
+    }
 }
 
 .about-us__title__container{
@@ -29,11 +50,28 @@ max-width: 352px;
 
 .about-us__container{
     max-width: 820px;
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: start;
     margin-top: 40px;
     margin-bottom: 45px;
+    overflow: hidden;
+}
+
+.about-us_vector{
+    display: none;
+    position: absolute;
+    border: 0.5px solid;
+    width: 100%;
+    top: 58px;
+    right: -177px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us_vector{
+        display: block;
+    }
 }
 
 .about-us__text{
@@ -44,6 +82,14 @@ max-width: 352px;
     max-width: 810px;
     margin-top: 35px;
 }
+@media screen and (max-width: 768px) {
+    .about-us__text{
+        font-weight: 400;
+font-size: 16px;
+line-height: 21px
+    }
+}
+
 
 
 .about-us__container_img{
@@ -54,7 +100,6 @@ max-width: 352px;
 .about-us__container_quote{
     position: relative; 
     /*background-image: url('./image/Vector\ \(3\).svg');*/
-    height: 427px;
     background-repeat: no-repeat;
     margin-top: 45px;
 }
@@ -62,21 +107,40 @@ max-width: 352px;
 .about-us__vector{
     position: absolute;
     left: -105px;
+    width: 132%;
+    max-width: 834px;
 }
 
 .quote{
     max-width: 470px;
-    padding-top:   95px;
-    padding-left: 100px;
+    padding-top:   10%;
+    padding-left: 10%;
+}
+
+@media screen and (max-width:500px) {
+    .quote{
+        max-width: 242px;
+        padding-top:   15%;
+        padding-left: 2%;
+    }
 }
 
 .quote__text{
-    font-family: 'Alethia Next';
+    font-family: 'Alethia', 'sans-serif';
 font-style: italic;
 font-weight: 350;
 font-size: 32px;
 line-height: 30px;
 max-width: 566px;
+}
+
+@media screen and (max-width:500px) {
+    .quote__text{
+        font-weight: 350;
+font-size: 13px;
+line-height: 14px;
+max-width: 242px;
+    }
 }
 
 .quote__text_author{
@@ -89,6 +153,15 @@ max-width: 566px;
     font-size: 25px;
     line-height: 30px;
 }
+
+@media screen and (max-width:500px) {
+    .quote__text_author{
+        font-weight: 350;
+        font-size: 11.5672px;
+        line-height: 14px;
+    }
+}
+
 
 .about-us__quote_image{
     margin-top: 64px;
@@ -107,12 +180,30 @@ line-height: 108.02%;
 margin-bottom: 70px;
 }
 
+@media screen and (max-width:768px) {
+    .team-obraz__title{
+        font-weight: 350;
+        font-size: 37px;
+        line-height: 102%
+    }
+}
+
 .team-obraz__text{
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    width: 493px;
+    max-width: 493px;
+}
+
+.team-obraz__text-second{
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .team-obraz__text-second{
+        display: none;
+    }
 }
 
 .team-obraz__text:not(:last-child){
@@ -122,10 +213,30 @@ margin-bottom: 70px;
 .team-obraz{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:768px) {
+    .team-obraz{
+        justify-content: center;
+    }
 }
 
 .team-obraz__imagess{
     position: relative;
+}
+
+.tema-obraz__image{
+    width: 295px;
+    height: 280px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+    .tema-obraz__image{
+        width: 130px;
+        height: auto;
+    }
 }
 
 .team-obraz__vector{
@@ -134,10 +245,26 @@ margin-bottom: 70px;
     position: relative;
     /* position: absolute; */
     top: -106px;
-    overflow: visible;
-    z-index: 3;
     /* height: 773px; */
     margin-bottom: -525px;
+    display: block
+}
+
+.team-obraz__vector-mobile{
+    display: none;
+
+}
+
+@media screen and (max-width:768px) {
+    .team-obraz__vector-mobile{
+        display: block;
+        position: absolute;
+        left: -21px;
+        top: -20px;
+    }
+    .team-obraz__vector{
+        display: none;
+    }
 }
 
 .team-obraz__container-images{
@@ -151,6 +278,12 @@ margin-bottom: 70px;
 .images-first{
     margin-top: 135px;
     margin-right: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .images-first{
+        margin-top: 40px;
+    }
 }
 
 .tema-obraz__image:not(:last-child){
@@ -171,6 +304,12 @@ margin-bottom: 70px;
     font-weight: 350;
 font-size: 66.2376px;
 line-height: 108.02%;
+}
+
+@media screen and (max-width:768px) {
+    .new-life__title{
+        font-size: 43px;
+    }
 }
 
 .new-life__vector{
@@ -205,6 +344,18 @@ margin-bottom: 30x;
     align-items: flex-start;
 }
 
+@media screen and (max-width:768px) {
+    .new-life__container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1239px) {
+    .new-life__container{
+        flex-wrap: wrap;
+    }
+}
+
 .new-life__text{
     max-width: 505px;
     font-weight: 500;
@@ -219,3 +370,27 @@ margin-top: 58px;
     margin-top: 75px;
 
 }
+
+.about-us{
+    margin-bottom: 130px;
+}
+
+
+@media screen and (max-width:768px) {
+    .header-about-us{
+        margin-left: 20px;
+    }
+
+    .about-us{
+        margin-left: 20px;
+    }
+
+    .team-obraz{
+        margin-left: 20px;
+    }
+
+    .new-life{
+        margin-left: 20px;
+    }
+}
+

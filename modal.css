@@ -59,9 +59,7 @@
     padding: 0;
 }
 
-.modal:nth-child(6){
-    text-align: start;
-}
+
 
 .modal__btn_close{
     margin: 24px 20px 195px 0px;
