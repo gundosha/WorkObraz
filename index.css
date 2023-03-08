@@ -550,11 +550,11 @@ padding-bottom: 21px;
     color: #464646;
 }
 .team__text{
-    font-size: 19px;
-    padding-top: 40px;
-    width: 420px;
-    line-height: 28px;
-}
+        font-size: 19px;
+        padding-top: 40px;
+        width: 420px;
+        line-height: 28px;
+    }
 }
 
 
@@ -562,7 +562,7 @@ padding-bottom: 21px;
     .team__subtitle{
         font-size: 16px;
         max-width: 350px;
-        margin-bottom: 231px;
+        margin-bottom: 206px;
         line-height: 21px;
 }   
     .team__text{
