@@ -1,16 +1,25 @@
 @import url(./font/fonts.css
 );
 
+@import url(./font/Raleway-Medium.ttf);
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Raleway:wght@100;500&display=swap');
+
+
 html{
     background: #F9F5F2;
 }
 
 body{
-    font-family: 'RalewayRegular', 'Microsoft Sans Serif', 'sans-serif'
+    font-family: 'Jost', sans-serif;
+font-family: 'Raleway', sans-serif;
+
 }
 
 .page{
-    font-family: 'RalewayRegular', 'Microsoft Sans Serif', 'sans-serif';
+    font-family: 'Jost', sans-serif;
+font-family: 'Raleway', sans-serif;
+
     margin: 0 auto;
     padding: 0;
     max-width: 1440px;
@@ -553,7 +562,8 @@ padding-bottom: 21px;
     .team__subtitle{
         font-size: 16px;
         max-width: 350px;
-        margin-bottom: 370px
+        margin-bottom: 231px;
+        line-height: 21px;
 }   
     .team__text{
         font-size: 16px;
@@ -580,7 +590,7 @@ color: black;
 
 @media screen and (max-width:425px) {
     .team__link{
-        margin-bottom: -500px;
+        margin-bottom: -395px;
     }
 }
 
@@ -738,8 +748,9 @@ color: black;
     .project__container_title{
         margin-bottom: 20px;
         max-width: 300px;
-        font-size: 25px;
+        font-size: 29px;
         font-weight: 600;
+        line-height: 33px;
     }
 }
 
@@ -772,6 +783,7 @@ line-height: 30px;
     margin-bottom: 265px;
     font-size: 16px;
     width: 340px;
+    line-height: 21px;
     }
 }
 
@@ -909,6 +921,7 @@ margin-right: 23px;
 @media screen and (max-width:425px) {
     .project__container_year{
         margin-top: 48px;
+        font-size: 16px;
 
     }
 
