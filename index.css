@@ -568,6 +568,7 @@ padding-bottom: 21px;
     .team__text{
         font-size: 16px;
         max-width: 350px;
+        line-height: 21px;
     }
 }
 
