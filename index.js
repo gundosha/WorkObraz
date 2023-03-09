@@ -53,19 +53,6 @@ pricebtnslider.forEach(function(item, i, btnslider){
 })
 
 
-const timer = () =>{
-    if(window.innerWidth < 800){
-        offsetTwo -= 368
-        if (offsetTwo < -368){
-            offsetTwo = 0
-        }
-        priceblock.style.left = offsetTwo + 'px'
-        console.log(offsetTwo)
-    }
-    else{
-        return null
-    }
-}
 
 setInterval(() => {if(window.innerWidth < 800){
     offset -=400
@@ -73,7 +60,6 @@ setInterval(() => {if(window.innerWidth < 800){
         offset = 0
     }
     sliderblock.style.left = offset + 'px'
-    console.log(offset)
 }
 else{
     return null
