@@ -2488,8 +2488,8 @@ margin-bottom: 27px;
 
 @media screen and (max-width:768px) {
     .project__container_group2-miracle{
-        margin-top: 50px;
-    }
+        margin-top: 10px; /*50*/
+    
 }
 .project__container_metre_portolio{
     font-weight: 600;
