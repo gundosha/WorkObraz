@@ -62,7 +62,7 @@ max-width: 379px;
 .about-us_vector{
     display: none;
     position: absolute;
-    border: 0.5px solid;
+    border-top: 1px solid;
     width: 100%;
     top: 58px;
     right: -177px;
@@ -379,18 +379,22 @@ margin-top: 58px;
 @media screen and (max-width:768px) {
     .header-about-us{
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .about-us{
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .team-obraz{
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .new-life{
         margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
