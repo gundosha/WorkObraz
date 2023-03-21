@@ -2634,7 +2634,7 @@ margin-bottom: 27px;
     margin-bottom: 264px;
 }
 
-
+}
 .header-design__title{
     width: 100%;
     background: #F9F5F2;
@@ -2642,7 +2642,6 @@ margin-bottom: 27px;
     border-right: 1px solid;
     display: none;
 }
-
 
 
 @media screen and (max-width:425px) {
@@ -2654,4 +2653,3 @@ margin-bottom: 27px;
         display: none;
     }
 }
-    
