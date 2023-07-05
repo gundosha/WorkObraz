@@ -8,7 +8,8 @@ html{
 }
 
 
-body{
+
+.page{
     max-width: 1240px;
     margin: auto;
     overflow-x: hidden;

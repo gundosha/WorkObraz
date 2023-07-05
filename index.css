@@ -659,7 +659,6 @@ color: black;
 .project__container{
     display: flex;
     max-height: 446px;
-    border-top: 1px solid;
     padding-bottom: 143px;
     justify-content: space-between;
     
@@ -785,6 +784,7 @@ line-height: 30px;
 
 .project__container_subtitle-first{
     margin-right: 20px;
+    padding-top: 142px;
 }
 
 @media screen and (max-width:768px) {
@@ -949,7 +949,7 @@ margin-right: 23px;
 }
 
 .project__container_subtitle_three{
-    padding-top: 221px;
+    padding-top: 142px;
     margin-right: 10px;
 }
 
@@ -1847,11 +1847,12 @@ line-height: 40px;
 .solution__container_header{
     border: 1px solid;
     text-align: center;
+    font-size: 1.4em;
 }
 
 .solution__container_title{
     font-weight: 500;
-font-size: 45.7067px;
+font-size: 1.4em;
 line-height: 102%;
 margin: 0;
 margin-top: 44px;
@@ -2186,6 +2187,7 @@ font-family: 'RalewayRegular', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 195px;
 }
 
 .footer__menu{
