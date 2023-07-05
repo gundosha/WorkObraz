@@ -5,12 +5,12 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth:{
-        user:'obraz_order@mail.ru', //zamilovivan2016@gmail.com
-        pass:'RgqyEamDMXCMXZXEC3bC' //RgqyEamDMXCMXZXEC3bC obraz  tfynoanelgyysxkl goggle
+        user:'zamilov_2016@mail.ru', //zamilovivan2016@gmail.com
+        pass:'870iKpuPpKqznJsvAne8' //RgqyEamDMXCMXZXEC3bC obraz  tfynoanelgyysxkl goggle
     }
 }, 
 {
-    from: 'Obraz <obraz_order@mail.ru>',
+    from: 'Obraz <zamilov_2016@mail.ru>',
 })
 
 

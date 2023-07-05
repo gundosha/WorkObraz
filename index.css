@@ -2445,6 +2445,10 @@ margin-bottom: 27px;
     display: block;
 }
 
+.projects__link{
+    color: black;
+}
+
 @media screen and (max-width:768px) {
     .portfolio-project__title{
         display: none;
@@ -2554,6 +2558,7 @@ margin-bottom: 27px;
 .projects__link{
     color: black;
     font-size: 25px;
+    text-decoration: underline;
 }
 
 .projects__text_link{
@@ -2562,7 +2567,9 @@ margin-bottom: 27px;
     margin-bottom: 28px;
 }
 
-
+.projects__text_link{
+    color: black;
+}
 
 
 /*метрополия*/
@@ -2652,4 +2659,32 @@ margin-bottom: 27px;
     .design__title-pc{
         display: none;
     }
+}
+
+
+.social_fixed{
+    display: block;
+    position: fixed;
+    right: 2%;
+    top: 85%;
+    z-index: 1010;
+}
+
+
+@media screen and (max-width:425px) {
+    .social__fixed_tg{
+        display: none;
+        margin: 0;
+    }
+    .social__fixed_whts{
+        margin-right: 25px;
+    }
+}
+
+.projects__text_link{
+    color: black;
+}
+
+.project-kutuz__link {
+    color: black;
 }
