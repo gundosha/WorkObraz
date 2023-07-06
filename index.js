@@ -10,6 +10,12 @@ const btnslider = document.querySelectorAll('.slider_next')
 const sliderblock = document.querySelector('.clients__container_com')
 const dreambtn = document.querySelector('.dream__btn')
 const modal = document.querySelector('.modal')
+const home = document.querySelector('.home')
+const aboutMe = document.querySelector('.aboutMe')
+const portfolio = document.querySelector('.portfolio')
+const price = document.querySelector('.price')
+const contact = document.querySelector('.contact')
+
 
 
 function modalOpen(mod){
@@ -28,6 +34,19 @@ modalClose.addEventListener('click', function(){
 open_btn.addEventListener('click', function(){
     modalOpen(modal)
 })
+
+
+price.addEventListener('click', function(){
+    modalCloses(modal)
+})
+
+
+contact.addEventListener('click', function(){
+    modalCloses(modal)
+})
+
+//.addEventListener('click', function()){
+
 
 
 btnslider.forEach(function(item, i, btnslider){
