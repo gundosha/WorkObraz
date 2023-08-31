@@ -6,7 +6,7 @@ const transporter = nodemailer.createTransport({
     secure: true,
     auth:{
         user:'obraz_design.website@mail.ru', //zamilovivan2016@gmail.com
-        pass:'dWA12dPQie4gPU4UNwqm' //870iKpuPpKqznJsvAne8 dWA12dPQie4gPU4UNwqm
+        pass:'dWA12dPQie4gPU4UNwqm' //Z3jyGtzTFPjTdK1mxiwm                    dWA12dPQie4gPU4UNwqm
     }
 }, 
 {

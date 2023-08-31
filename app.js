@@ -4,7 +4,7 @@ const mailer = require('./nodemailer')
 const app = express()
 let user = undefined
 
-const PORT = 5000 // порт
+const PORT = 3000 // порт
 
 app.use(express.static('../WorkObraz'));
 app.use('/static', express.static('WorkObraz'));
