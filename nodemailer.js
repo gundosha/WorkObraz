@@ -1,16 +1,16 @@
 const nodemailer = require('nodemailer')
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.mail.ru',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth:{
-        user:'obraz_design.website@mail.ru', //zamilovivan2016@gmail.com
-        pass:'dWA12dPQie4gPU4UNwqm' //Z3jyGtzTFPjTdK1mxiwm                    dWA12dPQie4gPU4UNwqm
+        user:'zamilovivan2016@gmail.com', //zamilovivan2016@gmail.com obraz_design.website@mail.ru
+        pass:'pdvittzuthkgydoj' //pdvittzuthkgydoj gogle                   dWA12dPQie4gPU4UNwqm
     }
 }, 
 {
-    from: 'Obraz <obraz_design.website@mail.ru>',
+    from: 'Obraz <zamilovivan2016@gmail.com>',
 })
 
 
