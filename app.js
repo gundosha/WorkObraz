@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended : false})) // собирает данн�
 app.post('/index', (req,res) => {  
     if(!req.body.number) return res.sendStatus(400) // минимальная проверка формы
     message = {
-        to: 'obraz_design.website@mail.ru',
+        to: 'zamilovivan2016@gmail.com',
         subject: 'Оставили номер',
         html: `<h2>Новый заказ</h2> 
         <i>Данные заказа</i>
