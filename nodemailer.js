@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
     auth:{
         user:'obraz_design.website@mail.ru', //zamilovivan2016@gmail.com obraz_design.website@mail.ru
         pass:'94cEv8UwBJPA4aznguYf' //pdvittzuthkgydoj gogle                   dWA12dPQie4gPU4UNwqm
-    }
+    } 
 }, 
 {
     from: 'Obraz <obraz_design.website@mail.ru>',
